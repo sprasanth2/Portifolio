@@ -8,18 +8,19 @@
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 2rem;
-    background: linear-gradient(
+    /* background: linear-gradient(
         45deg,
         transparent,
         var(--color-primary),
         transparent
-    );
+    ); */
     display: grid;
     place-items: center;
 }
 
 .about__me-image{
-    border-radius: 2rem;
+    width: 75%;
+    border-radius: 15%;
     overflow: hidden;
     transform: rotate(10deg);
 }
@@ -67,6 +68,11 @@
     margin: 2rem 0 2.6rem;
     color: var(--color-light);
 }
+/* img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+} */
 
 /* ############## Media Queries (Small Devices) ############### */
 @media screen and (max-width: 1024px){
@@ -82,6 +88,9 @@
 
    .about__content p{
     margin: 1rem 0 1.5rem;
+   }
+   .about__me-image{
+    width: 80%;
    }
 }
 @media screen and (max-width: 600px) {
@@ -101,5 +110,8 @@
     .about__content p{
         margin: 1.5rem 0;
     }
+    .about__me-image{
+        width: 90%;
+       }
 
 }
